@@ -7,3 +7,6 @@
 output/
 output.bak/
 package-lock.json
+java_output/
+classes/
+.spago/

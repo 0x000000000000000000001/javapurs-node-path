@@ -4,17 +4,47 @@ package:
     - console
     - effect
     - prelude
+
   test:
     main: Test.Main
-    dependencies: []
+    dependencies:
+      - assert
+      - console
+      - effect
+      - prelude
+      - exceptions
+      - partial
+      - st
+      - arrays
+      - either
+      - foldable-traversable
+      - maybe
+      - refs
+      - tailrec
+      - functions
+      - tuples
+      - integers
+      - numbers
+      - strings
+      - enums
+      - foreign
+      - foreign-object
+      - record
+      - identity
+      - control
+      - lists
+      - unfoldable
+      - gen
+      - quickcheck
+      - unsafe-coerce
+      - nullable
+
 workspace:
   packageSet:
     registry: 77.7.0
   extraPackages:
     aff:
       path: "../javapurs-aff"
-    argonaut-core:
-      path: "../javapurs-argonaut-core"
     arrays:
       path: "../javapurs-arrays"
     assert:
@@ -45,16 +75,16 @@ workspace:
       path: "../javapurs-functions"
     integers:
       path: "../javapurs-integers"
+    js-date:
+      path: "../javapurs-js-date"
     js-promise:
       path: "../javapurs-js-promise"
     js-promise-aff:
       path: "../javapurs-js-promise-aff"
-    js-uri:
-      path: "../javapurs-js-uri"
     lazy:
       path: "../javapurs-lazy"
-    math:
-      path: "../javapurs-math"
+    node-buffer:
+      path: "../javapurs-node-buffer"
     node-event-emitter:
       path: "../javapurs-node-event-emitter"
     node-fs:
@@ -63,8 +93,6 @@ workspace:
       path: "../javapurs-node-http"
     node-net:
       path: "../javapurs-node-net"
-    node-path:
-      path: "../javapurs-node-path"
     node-process:
       path: "../javapurs-node-process"
     node-streams:
@@ -75,10 +103,14 @@ workspace:
       path: "../javapurs-nullable"
     numbers:
       path: "../javapurs-numbers"
+    ordered-collections:
+      path: "../javapurs-ordered-collections"
     partial:
       path: "../javapurs-partial"
     prelude:
       path: "../javapurs-prelude"
+    quickcheck:
+      path: "../javapurs-quickcheck"
     random:
       path: "../javapurs-random"
     record:
@@ -87,16 +119,14 @@ workspace:
       path: "../javapurs-refs"
     run:
       path: "../javapurs-run"
-    simple-json:
-      path: "../javapurs-simple-json"
     spec:
       path: "../javapurs-spec"
     st:
       path: "../javapurs-st"
-    starter:
-      path: "../javapurs-starter"
     strings:
       path: "../javapurs-strings"
+    strings-extra:
+      path: "../javapurs-strings-extra"
     unfoldable:
       path: "../javapurs-unfoldable"
     unsafe-coerce:
