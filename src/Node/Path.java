@@ -114,7 +114,7 @@
         String ext = __pathExtName(path);
         java.util.Map<String, Object> parsed = new java.util.LinkedHashMap<>();
         parsed.put("root", path.startsWith("/") ? "/" : "");
-        parsed.put("dir", path.startsWith("/") ? __pathDirName(path) : __pathDirName(path));
+        parsed.put("dir", __pathDirName(path));
         parsed.put("base", base);
         parsed.put("ext", ext);
         parsed.put("name", ext.isEmpty() ? base : base.substring(0, base.length() - ext.length()));
